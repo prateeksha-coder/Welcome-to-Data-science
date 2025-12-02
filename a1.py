@@ -7,5 +7,7 @@ students_details = [('James', 5, 48.5), ('Nail', 6, 52.5),('Paul', 5, 42.10), ('
 students = np.array(students_details, dtype=data_type)   
 print("Original array:")
 print(students)
-print("Sort by height")
+print("\nSort by height in ascending order: ")
 print(np.sort(students, order='height'))
+print("\nSort by height in descending order: ")
+print(np.sort(students, order='height')[::-1])
